@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+   
+    <a href="{% url 'first_app:about_us' %}">
+    <button type="submit">
+        Submit
+    </button>
+</a>
+</form>
+<br><br>
+    <a href="{% url 'forgot_password' %}">
+
+        <button type="submit">Forgot Password</button>
+    </a>
+
+</body>
+</html>
